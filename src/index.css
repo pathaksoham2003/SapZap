@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.hello {
+  background-color: rgb(0, 0, 0);
+}
+
+.light {
+  --background: 255, 255, 255; /* White */
+  --border: 220, 220, 220; /* Light Grey */
+  --card: 245, 245, 245; /* Very Light Grey */
+  --primary: 33, 150, 243; /* Blue */
+  --secondary: 158, 158, 158; /* Grey */
+  --accent: 255, 87, 34; /* Deep Orange */
+  --heading: 0, 0, 0; /* Black */
+  --subheading: 55, 55, 55; /* Dark Grey */
+  --paragraph: 85, 85, 85; /* Medium Grey */
+}
+.dark {
+  --background: 33, 33, 33; /* Dark Grey */
+  --border: 85, 85, 85; /* Medium Grey */
+  --card: 48, 48, 48; /* Darker Grey */
+  --primary: 3, 169, 244; /* Light Blue */
+  --secondary: 144, 164, 174; /* Blue Grey */
+  --accent: 255, 193, 7; /* Amber */
+  --heading: 255, 255, 255; /* White */
+  --subheading: 200, 200, 200; /* Light Grey */
+  --paragraph: 160, 160, 160; /* Lighter Grey */
+}
+
+.hexa {
+  --background: 255, 255, 255; /* White */
+  --border: 0, 0, 0; /* Black */
+  --card: 240, 240, 240; /* Light Grey */
+  --primary: 76, 175, 80; /* Green */
+  --secondary: 63, 81, 181; /* Indigo */
+  --accent: 233, 30, 99; /* Pink */
+  --heading: 33, 33, 33; /* Dark Grey */
+  --subheading: 66, 66, 66; /* Grey */
+  --paragraph: 99, 99, 99; /* Medium Grey */
+}
+
+.darcular {
+  --background: 45, 45, 48; /* Dark Charcoal */
+  --border: 85, 85, 85; /* Medium Grey */
+  --card: 60, 63, 65; /* Dark Grey */
+  --primary: 61, 174, 233; /* Light Blue */
+  --secondary: 151, 196, 103; /* Light Green */
+  --accent: 255, 183, 77; /* Orange */
+  --heading: 229, 229, 229; /* Very Light Grey */
+  --subheading: 200, 200, 200; /* Light Grey */
+  --paragraph: 170, 170, 170; /* Medium Light Grey */
+}
+
+.jelly {
+  --background: 255, 245, 238; /* Seashell */
+  --border: 255, 182, 193; /* Light Pink */
+  --card: 255, 228, 225; /* Misty Rose */
+  --primary: 255, 105, 180; /* Hot Pink */
+  --secondary: 255, 20, 147; /* Deep Pink */
+  --accent: 255, 69, 0; /* Red Orange */
+  --heading: 139, 0, 139; /* Dark Magenta */
+  --subheading: 148, 0, 211; /* Dark Violet */
+  --paragraph: 186, 85, 211; /* Medium Orchid */
+}
+
+.fusion {
+  --background: 250, 250, 250; /* White Smoke */
+  --border: 176, 196, 222; /* Light Steel Blue */
+  --card: 240, 255, 255; /* Azure */
+  --primary: 0, 191, 255; /* Deep Sky Blue */
+  --secondary: 135, 206, 250; /* Light Sky Blue */
+  --accent: 255, 215, 0; /* Gold */
+  --heading: 0, 0, 139; /* Dark Blue */
+  --subheading: 0, 0, 205; /* Medium Blue */
+  --paragraph: 30, 144, 255; /* Dodger Blue */
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* color */
+  --background: 245, 245, 245;
+  --border: 212, 212, 212;
+  --card: 255, 255, 255;
+  --primary: 23, 23, 23;
+  --secondary: 115, 115, 115;
+}
