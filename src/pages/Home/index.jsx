@@ -1,28 +1,16 @@
 import React from "react";
+import Hero from "./Hero";
+import Project from "../Project";
+import Connect from "./Connect";
+import Experience from "./Experience";
 
 const Home = () => {
-  const changeTheme = (theme) => {
-    localStorage.setItem("theme", theme);
-    document.body.classList = [theme];
-  };
-
   return (
-    <div>
-      <div className="h-[1000px] bg-red pt-40">
-        <h2 className="bg-primary">Hello</h2>
-        <h2>Helo</h2>
-        <button onClick={() => changeTheme("dark")}>dark</button>
-        <br />
-        <button onClick={() => changeTheme("light")}>light</button>
-        <br />
-        <button onClick={() => changeTheme("hexa")}>hexa</button>
-        <br />
-        <button onClick={() => changeTheme("darcular")}>darcular</button>
-        <br />
-        <button onClick={() => changeTheme("jelly")}>jelly</button>
-        <br />
-        <button onClick={() => changeTheme("fusion")}>fusion</button>
-      </div>
+    <div className="w-full flex flex-1 flex-col min-h-screen">
+      <Hero />
+      <Experience />
+      <Project />
+      <Connect />
     </div>
   );
 };
