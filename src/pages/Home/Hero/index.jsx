@@ -6,8 +6,8 @@ const Hero = () => {
     <div className="w-full flex justify-center items-center pt-20">
       <div className=" w-full flex max-w-[1240px]">
         <div className="flex flex-col w-1/2 mt-20 pt-4">
-          <h2 className="text-heading flex text-6xl pt-5">
-            Hi, I<span className="text-7xl text-primary">' </span>m Soham
+          <h2 className="text-heading flex text-7xl font-semibold pt-5">
+            Hi, I<span className="text-6xl text-primary">' </span>m Soham
             <div className="h-5 w-5 rounded-full bg-primary"></div>
           </h2>
           <h2 className="text-heading text-2xl py-5">

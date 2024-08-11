@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Root from "./pages";
-import Project from "./pages/Project";
 function App() {
   const [theme,setTheme] = useState("light");
 
@@ -27,7 +26,6 @@ function App() {
         <Route path="/" element={<Root />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
-          <Route path="project/:id" element={<Project />} />
         </Route>
       </Routes>
     </Router>
