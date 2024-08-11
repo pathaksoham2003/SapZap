@@ -15,6 +15,17 @@ export default {
         subheading: "rgba(var(--subheading))",
         paragraph: "rgba(var(--paragraph))",
       },
+      keyframes: {
+        "trans-right": {
+          "0% , 100%": {
+            transform:"translateY(30px)",
+          },
+          "50%": { transform: "translateY(0px)" },
+        },
+      },
+      animation:{
+        'trans-right':'trans-right 2s ease-in-out infinite'
+      }
     },
   },
   plugins: [],
