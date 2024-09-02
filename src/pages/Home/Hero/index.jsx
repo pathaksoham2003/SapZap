@@ -19,13 +19,14 @@ const Hero = () => {
             pretty cool companies. I also teach neural networks to remember
             things. In case you need developer or a teacher. Let's Connect!
           </p>
-          <h2 className="animate-trans-right repeat-1 border-4 font-bold text-xl text-primary mt-14 border-primary relative flex items-center justify-center max-w-[250px] py-2 my-5 text-center rounded-lg px-5">
-            Get In Touch
-            <img className="absolute -right-12 h-32" src={Kangaroo} />
-          </h2>
-          <div>
+        <div>
+
+        </div>
+        <div >
+          <div className="">
             <Social/>
           </div>
+        </div>
         </div>
         <div className="flex">
           <img src={HeroSoham} />

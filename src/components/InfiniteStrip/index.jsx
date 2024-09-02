@@ -1,5 +1,5 @@
 import React from "react";
-import { amazonWebServicesOriginalWordmark, bitbucketOriginal, bootstrapPlain, cockroachIcon, cOriginal, cppOriginal, css3Original, dartOriginal, djangoPlainWordmark, dockerOriginal, electronOriginalWordmark, expressOriginalWordmark, figmaOriginal, flutterOriginal, gitlabOriginal, gitOriginal, html5Original, javaOriginal, javascriptOriginal, jiraOriginal, kubernetesPlainWordmark, materialuiOriginal, mongodbOriginalWordmark, mysqlPlainWordmark, nodejsOriginal, opencvOriginalWordmark, originalSvg, pythonOriginal, reactOriginal, rustPlain, salesforceOriginal, socketioOriginal, sqlitePlainWordmark, tailwindcssPlain, tensorflowOriginal } from "../../Icons/index";
+import { amazonWebServicesOriginalWordmark, bitbucketOriginal, bootstrapPlain, cockroachIcon, cOriginal, cppOriginal, css3Original, dartOriginal, djangoPlainWordmark, dockerOriginal, electronOriginalWordmark, expressOriginalWordmark, figmaOriginal, flutterOriginal, gitlabOriginal, gitOriginal, html5Original, javaOriginal, javascriptOriginal, jiraOriginal, kubernetesPlainWordmark, materialuiOriginal, mongodbOriginalWordmark, mysqlPlainWordmark, nodejsOriginal, opencvOriginalWordmark, originalSvg, pythonOriginal, Pytorch, ReactNative, reactOriginal, Redux, rustPlain, salesforceOriginal, socketioOriginal, sqlitePlainWordmark, tailwindcssPlain, tensorflowOriginal } from "../../Icons/index";
 
 const InfiniteTextStrip = () => {
   return (
@@ -37,8 +37,9 @@ const InfiniteTextStrip = () => {
         <img src={salesforceOriginal} alt="C++" className="h-12 w-12 mx-10" />
         <img src={sqlitePlainWordmark} alt="C++" className="h-12 w-12 mx-10" />
         <img src={tailwindcssPlain} alt="C++" className="h-12 w-12 mx-10" />
-
-
+        <img src={Redux} alt="C++" className="h-12 w-12 mx-10" />
+        <img src={ReactNative} alt="C++" className="h-12 w-12 mx-10" />
+        <img src={Pytorch} alt="C++" className="h-12 w-12 mx-10" />
       </div>
     </div>
   );

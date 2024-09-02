@@ -35,8 +35,14 @@ import socketioOriginal from "./socketio-original.png?react";
 import sqlitePlainWordmark from "./sqlite-plain-wordmark.png?react";
 import tailwindcssPlain from "./tailwindcss-plain.png?react";
 import tensorflowOriginal from "./tensorflow-original.png?react";
+import Redux from "./redux.jpg?react";
+import ReactNative from "./react-native.png?react";
+import Pytorch from "./pytorch.png?react";
 
 export {
+  Redux,
+  ReactNative,
+  Pytorch,
   amazonWebServicesOriginalWordmark,
   bitbucketOriginal,
   bootstrapPlain,
@@ -73,5 +79,5 @@ export {
   socketioOriginal,
   sqlitePlainWordmark,
   tailwindcssPlain,
-  tensorflowOriginal
+  tensorflowOriginal,
 };
