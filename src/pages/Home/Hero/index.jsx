@@ -1,9 +1,10 @@
 import React from "react";
 import { HeroSoham, Kangaroo } from "../../../images";
+import Social from "../../../components/Social";
 
 const Hero = () => {
   return (
-    <div className="w-full flex justify-center items-center pt-20">
+    <div className="w-full flex justify-center items-center pt-[60px]">
       <div className=" w-full flex max-w-[1240px]">
         <div className="flex flex-col w-1/2 mt-20 pt-4">
           <h2 className="text-heading flex text-7xl font-semibold pt-5">
@@ -22,6 +23,9 @@ const Hero = () => {
             Get In Touch
             <img className="absolute -right-12 h-32" src={Kangaroo} />
           </h2>
+          <div>
+            <Social/>
+          </div>
         </div>
         <div className="flex">
           <img src={HeroSoham} />

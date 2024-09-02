@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         background: "rgba(var(--background))",
-        border: "rgba(var(--border))",
+        border: "rgba(var(--borderp))",
         card: "rgba(var(--card))",
         primary: "rgba(var(--primary))",
         secondary: "rgba(var(--secondary))",
@@ -22,9 +22,14 @@ export default {
           },
           "50%": { transform: "translateY(0px)" },
         },
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        }
       },
       animation:{
-        'trans-right':'trans-right 2s ease-in-out infinite'
+        'trans-right':'trans-right 2s ease-in-out infinite',
+        "marquee": 'marquee 30s linear infinite',
       }
     },
   },
