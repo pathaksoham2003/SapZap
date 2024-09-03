@@ -5,10 +5,10 @@ import { AI } from '../../../../images'
 const Project = ({item}) => {
   return (
     <div className='flex flex-col m-2'>
-        <div className='rounded-tr-3xl rounded-tl-3xl overflow-hidden'>
+        <div className='rounded-3xl aspect-video overflow-hidden'>
             <img src={AI}/>
         </div>
-        <div className='p-3 bg-card'>
+        <div className='p-3'>
             <h2 className='text-heading text-xl'>{item.role}</h2>
             <h2 className='text-heading text-xl'>{item.companyName}</h2>
             <div className='flex items-end'>
