@@ -61,20 +61,20 @@ export const WorkProject = [
     hero:Somazon,
     url:"https://major-project-client-wheat.vercel.app/",
     description:"An ecommerce site with the complete filter functionality and payment gateway implementation",
-
+    tech:["React","Reduxjs Toolkit","Redux Persist","Axios","Node","MySQL","Sequelize","Stripe","Nodemailer"]
   },
   {
     title:"NFT Marketplace: Transaction for NFTs",
     hero:NFT,
     url:"https://nft-market-place-omega.vercel.app/",
     description:"An ecommerce site with the complete filter functionality and payment gateway implementation",
-
+    tech:["React","Reduxjs Toolkit","Axios","Node","MySQL","Sequelize","Stripe","Nodemailer"]
   },
   {
     title:"Somazon: Ecommerce full stack",
     hero:MoneySutra,
     url:"https://moneysutra.vercel.app/",
     description:"An ecommerce site with the complete filter functionality and payment gateway implementation",
-
+    tech:["React","Reduxjs Toolkit","Axios","Node","MySQL","Sequelize","Stripe","Nodemailer"]
   }
 ]

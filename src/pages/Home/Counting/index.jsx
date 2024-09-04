@@ -2,7 +2,7 @@ import React from 'react'
 
 const Counting = () => {
   return (
-    <div className='w-full flex justify-center mt-20 bg-primary/20 py-10'>
+    <div className='w-full flex justify-center mt-20 bg-subheading/20 py-10'>
         <div className='w-full flex justify-center max-w-[1204px]'>
             <div className='w-full flex justify-between max-w-[1000px]'>
                 <div className='text-2xl text-center font-semibold'>
