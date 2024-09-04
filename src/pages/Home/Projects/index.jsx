@@ -1,6 +1,6 @@
 import React from "react";
 import Project from "./Project";
-import {Companies} from "../../../data/service.jsx";
+import {Companies, WorkProject} from "../../../data/service.jsx";
 const Projects = () => {
   return (
     <div className="w-full flex justify-center items-center pt-20">
@@ -13,7 +13,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:Grid-cols-2">
-          {Companies.map(item=><Project item={item}/>)}
+          {WorkProject.map(item=><Project item={item}/>)}
         </div>
       </div>
     </div>

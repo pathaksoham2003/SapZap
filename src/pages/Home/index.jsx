@@ -10,10 +10,10 @@ const Home = () => {
   return (
     <div className="w-full flex flex-1 flex-col min-h-screen">
       <Hero />
-      <Counting />
       <InfiniteTextStrip/>
-      <Projects />
       <Experience />
+      <Counting />
+      <Projects />
       <Connect />
     </div>
   );
