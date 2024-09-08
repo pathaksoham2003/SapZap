@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { HeroImg } from "../../assets";
+import { HeroImg } from "../../../assets";
 import emailjs from "@emailjs/browser";
 
 const Connect = () => {
@@ -130,7 +130,7 @@ const Connect = () => {
                   id="message"
                   rows="4"
                   className={`block p-2.5 w-full text-xl text-gray-900 rounded-lg border border-gray-500 ${errors.message ? 'border-red-500' : ''}`}
-                  placeholder="Write your thoughts here..."
+                  placeholder="Write your thoughts here...."
                   name="message"
                   aria-describedby="message-error"
                 ></textarea>

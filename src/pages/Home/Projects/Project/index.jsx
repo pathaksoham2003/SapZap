@@ -2,6 +2,8 @@ import React from "react";
 import { AI } from "../../../../images";
 
 const Project = ({ item }) => {
+
+  
   return (
     <div className="flex flex-col m-2">
       <div className="rounded-3xl bg-subheading/20 aspect-video overflow-hidden">

@@ -71,7 +71,7 @@ export const WorkProject = [
     tech:["React","Reduxjs Toolkit","Axios","Node","MySQL","Sequelize","Stripe","Nodemailer"]
   },
   {
-    title:"Somazon: Ecommerce full stack",
+    title:"Somazon: Ecommerce full stack ",
     hero:MoneySutra,
     url:"https://moneysutra.vercel.app/",
     description:"An ecommerce site with the complete filter functionality and payment gateway implementation",
