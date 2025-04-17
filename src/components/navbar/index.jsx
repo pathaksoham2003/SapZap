@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { SapZap } from "../../images";
+import React, {useEffect, useState} from "react";
+import {SapZap} from "../../images";
 
 const Navbar = () => {
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState(null);
 
   const changeTheme = (theme) => {
     localStorage.setItem("theme", theme);
@@ -11,27 +11,30 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    localStorage.setItem("theme", theme);
-    document.body.classList = [theme];
-    setTheme(theme);
+    const theme = localStorage.getItem("theme");
+    if (!theme) {
+      changeTheme("dark");
+    } else {
+      changeTheme(theme);
+    }
   }, []);
 
   return (
     <div className="w-full backdrop-blur-sm shadow-lg fixed top-0 left-0 z-50 h-[64px] flex justify-center">
-      <div className="flex-1 bg-primary">
-
-      </div>
+      <div className="flex-1 bg-primary"></div>
       <div className="w-full flex items-center bg-background/40 justify-between max-w-[1240px]">
         <div className="relative bg-primary h-full w-full max-w-[200px] text-xl font-bold text-heading">
-          <h2 className="h-full flex flex-1  text-background justify-center items-center italic text-2xl tracking-wider">SAPZAP</h2>
+          <h2 className="h-full flex flex-1  text-background justify-center items-center italic text-2xl tracking-wider">
+            SAPZAP
+          </h2>
           <div className="-skew-x-[50deg] absolute -right-12 w-24 top-0 block bg-primary h-full"></div>
         </div>
         <div className="hidden md:flex space-x-4">
-          <button className="text-heading hover:text-gray-300">Home</button>
+          {/* <button className="text-heading hover:text-gray-300">Home</button>
           <button className="text-heading hover:text-gray-300">About</button>
-          <button className="text-heading hover:text-gray-300">Services</button>
+          <button className="text-heading hover:text-gray-300">Services</button> */}
           <button className="text-heading">
-            {theme == "light" ? (
+            {theme && theme == "light" ? (
               <svg
                 onClick={() => changeTheme("dark")}
                 xmlns="http://www.w3.org/2000/svg"
@@ -69,11 +72,8 @@ const Navbar = () => {
         <div className="md:hidden">
           <button className="text-heading">Menu</button>
         </div>
-        
       </div>
-      <div className="flex-1 block bg-background/40  backdrop-blur-sm">
-
-      </div>
+      <div className="flex-1 block bg-background/40  backdrop-blur-sm"></div>
     </div>
   );
 };

@@ -1,11 +1,9 @@
 import React from "react";
-import { AI } from "../../../../images";
+import {AI} from "../../../../images";
 
-const Project = ({ item }) => {
-
-  
+const Project = ({item}) => {
   return (
-    <div className="flex flex-col m-2">
+    <div className="w-full flex flex-col rounded-3xl">
       <div className="rounded-3xl bg-subheading/20 aspect-video overflow-hidden">
         <div
           onClick={() => window.open(item.url, "__blank")}
@@ -21,7 +19,7 @@ const Project = ({ item }) => {
           <img className="flex-1 h-full w-full" src={item.hero} />
         </div>
       </div>
-      <div className="p-3">
+      <div className="p-5">
         <h2 className="text-heading text-2xl font-semibold">{item.title}</h2>
         <h2 className="text-heading">{item.description}</h2>
         <div className="flex w-[100px] ml-auto">
@@ -48,7 +46,7 @@ const Project = ({ item }) => {
         </div>
         <div className="flex flex-wrap mt-4">
           {item.tech.map((item) => (
-            <h2 className="bg-subheading rounded px-2 m-1 text-white">
+            <h2 className="bg-heading/10 rounded px-2 m-1 text-heading">
               {item}
             </h2>
           ))}

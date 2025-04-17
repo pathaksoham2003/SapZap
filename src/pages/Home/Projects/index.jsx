@@ -1,7 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import Project from "./Project";
-import { Companies, WorkProject } from "../../../data/service.jsx";
+import {Companies, ProjectData} from "../../../data/service.jsx";
+import { motion } from "framer-motion";
+
 const Projects = () => {
+  const [tab, setTab] = useState(0);
+
   return (
     <div className="w-full flex justify-center items-center pt-20">
       <div className="w-full flex flex-col max-w-[1240px]">
@@ -17,14 +21,39 @@ const Projects = () => {
             </h2>
           </div>
         </div>
-        <div className="w-full flex justify-center my-4">
-          <h2 className="bg-subheading/80 text-background transition-colors duration-500 mx-2 rounded-md px-4 py-2 hover:bg-subheading">Web Development</h2>
-          <h2 className="bg-subheading/80 text-background transition-colors duration-500 mx-2 rounded-md px-4 py-2 hover:bg-subheading">Mobile Development</h2>
-          <h2 className="bg-subheading/80 text-background transition-colors duration-500 mx-2 rounded-md px-4 py-2 hover:bg-subheading">Desktop Development</h2>
-          <h2 className="bg-subheading/80 text-background transition-colors duration-500 mx-2 rounded-md px-16 py-2 hover:bg-subheading">AI ML</h2>
+        <div className="w-full flex justify-between">
+          <div className="w-full flex justify-center my-4">
+            <motion.div
+              className="w-full flex flex-wrap justify-center gap-2 md:gap-4"
+              initial={{opacity: 0, y: 10}}
+              whileInView={{opacity: 1, y: 0}}
+              transition={{duration: 1.2}}
+              viewport={{once: true}}
+            >
+              {[
+                "Frontend Development",
+                "Backend Development",
+                "AI ML & Other",
+              ].map((label, index) => (
+                <motion.h2
+                  key={index}
+                  onClick={() => setTab(index)}
+                  initial={{opacity: 0, y: 10}}
+                  whileHover={{scale: 1.05}}
+                  whileTap={{scale: 0.95}}
+                  animate={{opacity: 1, y: 0}}
+                  transition={{duration: 0.5, delay: index * 0.2}}
+                  className="bg-subheading/80 text-background transition-colors duration-500 rounded-md px-6 md:px-8 py-2 cursor-pointer hover:bg-subheading"
+                >
+                  {label}
+                </motion.h2>
+              ))}
+            </motion.div>
+          </div>
+          <div className=""></div>
         </div>
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:Grid-cols-2">
-          {WorkProject.map((item) => (
+        <div className="w-full grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-2">
+          {ProjectData[tab].map((item) => (
             <Project item={item} />
           ))}
         </div>

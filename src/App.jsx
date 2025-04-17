@@ -4,11 +4,6 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Root from "./pages";
 function App() {
-  const [theme,setTheme] = useState("light");
-
-  const changeTheme = () => {
-    localStorage.setItem("theme","light");
-  }
 
   useEffect(() => {
     const selectedTheme = localStorage.getItem("theme");

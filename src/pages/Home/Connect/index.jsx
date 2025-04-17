@@ -75,8 +75,8 @@ const Connect = () => {
       <div className="w-full max-w-[1240px] flex ">
         <div className="flex flex-col md:flex-row">
           <div className="px-4 md:px-16 mt-16">
-            <h2 className="text-6xl font-semibold">Let’s Connect </h2>
-            <p className="text-xl ml-1 mt-3">
+            <h2 className="text-6xl font-thin text-heading">Let’s <span className="font-semibold bg-gradient-to-tr from-cyan-400 to-white bg-clip-text text-transparent">Connect</span></h2>
+            <p className="text-xl ml-1 mt-3 text-subheading">
               Let's align our constellations! Reach out and let the magic of
               collaboration illuminate our skies.
             </p>
@@ -138,7 +138,7 @@ const Connect = () => {
               </div>
               <input
                 type="submit"
-                className="bg-primary rounded-xl text-center py-3 text-xl text-white font-bold"
+                className="bg-gradient-to-tr from-cyan-300 to-black shadow-md rounded-xl text-center py-3 text-xl text-white font-bold"
                 value="Send"
               />
             </form>

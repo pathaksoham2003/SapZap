@@ -1,4 +1,5 @@
-import { MoneySutra, NFT, Somazon } from "../images";
+import {AI, MoneySutra, NFT, Somazon} from "../images";
+import JavaResume from "./resume/Java.jpg?react";
 
 export const Companies = [
   {
@@ -6,7 +7,7 @@ export const Companies = [
     companyName: "Daten & Wissen Pvt. Ltd.",
     start_date: "23 December 2023",
     end_date: "Current",
-    location:"Remote - Mumbai",
+    location: "Remote - Mumbai",
     projects: [
       {
         name: "AI Face recognition and photo sharing application",
@@ -39,11 +40,11 @@ export const Companies = [
     companyName: "Nanasaheb Kadam College Of Agriculture",
     start_date: "15 June 2023",
     end_date: "15 September 2023",
-    location:"On-site - Chh. Sambhaji Nagar",
+    location: "On-site - Chh. Sambhaji Nagar",
     projects: [
       {
         name: "Official College Website",
-        technologies: ["HTML", "CSS", "JS","Bootstrap", "PHP","MySQL"],
+        technologies: ["HTML", "CSS", "JS", "Bootstrap", "PHP", "MySQL"],
         implementations: [
           "Integrated image upload and display functionality, allowing seamless faculty profile management and improving website interaction by 25%.",
           "Developed comprehensive pages for the canteen, hostel, and labs, enhancing user navigation and increasing overall site traffic by 30%.",
@@ -54,27 +55,189 @@ export const Companies = [
   },
 ];
 
+export const WEBDEV = [
+  {
+    title: "Somazon: Ecommerce full stack",
+    hero: Somazon,
+    url: "https://major-project-client-wheat.vercel.app/",
+    description:
+      "An ecommerce site with the complete filter functionality and payment gateway implementation",
+    tech: [
+      "React",
+      "Reduxjs Toolkit",
+      "Redux Persist",
+      "Axios",
+      "Node",
+      "MySQL",
+      "Sequelize",
+      "Stripe",
+      "Nodemailer",
+    ],
+  },
+  {
+    title: "NFT Marketplace: Transaction for NFTs",
+    hero: NFT,
+    url: "https://nft-market-place-omega.vercel.app/",
+    description:
+      "An ecommerce site with the complete filter functionality and payment gateway implementation",
+    tech: [
+      "React",
+      "Reduxjs Toolkit",
+      "Axios",
+      "Node",
+      "MySQL",
+      "Sequelize",
+      "Stripe",
+      "Nodemailer",
+    ],
+  },
+  {
+    title: "Somazon: Ecommerce full stack ",
+    hero: MoneySutra,
+    url: "https://moneysutra.vercel.app/",
+    description:
+      "An ecommerce site with the complete filter functionality and payment gateway implementation",
+    tech: [
+      "React",
+      "Reduxjs Toolkit",
+      "Axios",
+      "Node",
+      "MySQL",
+      "Sequelize",
+      "Stripe",
+      "Nodemailer",
+    ],
+  },
+];
 
-export const WorkProject = [
+export const MOBILE = [
   {
-    title:"Somazon: Ecommerce full stack",
-    hero:Somazon,
-    url:"https://major-project-client-wheat.vercel.app/",
-    description:"An ecommerce site with the complete filter functionality and payment gateway implementation",
-    tech:["React","Reduxjs Toolkit","Redux Persist","Axios","Node","MySQL","Sequelize","Stripe","Nodemailer"]
+    title: "Somazon MOBILE: Ecommerce full stack",
+    hero: Somazon,
+    url: "https://major-project-client-wheat.vercel.app/",
+    description:
+      "An ecommerce site with the complete filter functionality and payment gateway implementation",
+    tech: [
+      "React",
+      "Reduxjs Toolkit",
+      "Redux Persist",
+      "Axios",
+      "Node",
+      "MySQL",
+      "Sequelize",
+      "Stripe",
+      "Nodemailer",
+    ],
   },
   {
-    title:"NFT Marketplace: Transaction for NFTs",
-    hero:NFT,
-    url:"https://nft-market-place-omega.vercel.app/",
-    description:"An ecommerce site with the complete filter functionality and payment gateway implementation",
-    tech:["React","Reduxjs Toolkit","Axios","Node","MySQL","Sequelize","Stripe","Nodemailer"]
+    title: "NFT Marketplace: Transaction for NFTs",
+    hero: NFT,
+    url: "https://nft-market-place-omega.vercel.app/",
+    description:
+      "An ecommerce site with the complete filter functionality and payment gateway implementation",
+    tech: [
+      "React",
+      "Reduxjs Toolkit",
+      "Axios",
+      "Node",
+      "MySQL",
+      "Sequelize",
+      "Stripe",
+      "Nodemailer",
+    ],
   },
   {
-    title:"Somazon: Ecommerce full stack ",
-    hero:MoneySutra,
-    url:"https://moneysutra.vercel.app/",
-    description:"An ecommerce site with the complete filter functionality and payment gateway implementation",
-    tech:["React","Reduxjs Toolkit","Axios","Node","MySQL","Sequelize","Stripe","Nodemailer"]
-  }
-]
+    title: "Somazon: Ecommerce full stack ",
+    hero: MoneySutra,
+    url: "https://moneysutra.vercel.app/",
+    description:
+      "An ecommerce site with the complete filter functionality and payment gateway implementation",
+    tech: [
+      "React",
+      "Reduxjs Toolkit",
+      "Axios",
+      "Node",
+      "MySQL",
+      "Sequelize",
+      "Stripe",
+      "Nodemailer",
+    ],
+  },
+];
+
+export const AI_ML = [
+  {
+    title: "AI_ML",
+    hero: Somazon,
+    url: "https://major-project-client-wheat.vercel.app/",
+    description:
+      "An ecommerce site with the complete filter functionality and payment gateway implementation",
+    tech: [
+      "React",
+      "Reduxjs Toolkit",
+      "Redux Persist",
+      "Axios",
+      "Node",
+      "MySQL",
+      "Sequelize",
+      "Stripe",
+      "Nodemailer",
+    ],
+  },
+  {
+    title: "NFT Marketplace: Transaction for NFTs",
+    hero: NFT,
+    url: "https://nft-market-place-omega.vercel.app/",
+    description:
+      "An ecommerce site with the complete filter functionality and payment gateway implementation",
+    tech: [
+      "React",
+      "Reduxjs Toolkit",
+      "Axios",
+      "Node",
+      "MySQL",
+      "Sequelize",
+      "Stripe",
+      "Nodemailer",
+    ],
+  },
+  {
+    title: "Somazon: Ecommerce full stack ",
+    hero: MoneySutra,
+    url: "https://moneysutra.vercel.app/",
+    description:
+      "An ecommerce site with the complete filter functionality and payment gateway implementation",
+    tech: [
+      "React",
+      "Reduxjs Toolkit",
+      "Axios",
+      "Node",
+      "MySQL",
+      "Sequelize",
+      "Stripe",
+      "Nodemailer",
+    ],
+  },
+];
+
+export const ProjectData = [WEBDEV, MOBILE, AI_ML];
+
+export const RESUME = [
+  {
+    name: "Java + Spring Boot",
+    path: JavaResume,
+    description: "This is my Java resume for Spring Boot and other stuff",
+  },
+  {
+    name: "Python Django Resume",
+    path: JavaResume,
+    description:
+      "This is my Python Django Resume for Spring Boot and other stuff",
+  },
+  {
+    name: "MERN Stack Resume",
+    path: JavaResume,
+    description:
+      "This is my MERN Stack Resume resume for Spring Boot and other stuff",
+  },
+];
