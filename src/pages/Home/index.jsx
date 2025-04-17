@@ -23,7 +23,6 @@ const Home = () => {
       <div className="h-10">
 
       </div>
-      <ServiceCards/>
     </div>
   );
 };

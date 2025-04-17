@@ -5,4 +5,6 @@ import SapZap from "./SapZap.png?react";
 import Somazon from "./Somazon.png?react";
 import NFT from "./NFT.png?react";
 import MoneySutra from "./MoneySutra.png?react";
-export { HeroSoham, Kangaroo, AI, NFT,SapZap,Somazon,MoneySutra };
+import SketchSpace from "./SketchSpace.png?react";
+import EcomMicroservice from "./EcomMicroservice.png?react";
+export { HeroSoham, Kangaroo, AI, NFT, SapZap, Somazon, MoneySutra, SketchSpace,EcomMicroservice };
