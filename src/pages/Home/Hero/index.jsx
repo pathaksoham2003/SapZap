@@ -2,6 +2,7 @@ import React from "react";
 import { HeroSoham } from "../../../images";
 import Social from "../../../components/Social";
 import { motion } from "framer-motion";
+import { BGLessSoham } from "../../../assets";
 
 const Hero = () => {
   return (
@@ -76,7 +77,7 @@ const Hero = () => {
           viewport={{ once: true }}
           className="flex w-full lg:w-1/2 justify-center lg:justify-end mt-10 lg:mt-0"
         >
-          <img src={HeroSoham} className="w-full max-w-[400px] lg:max-w-[500px] h-auto" />
+          <img src={BGLessSoham} className="w-full max-w-[400px] lg:max-w-[500px] h-auto" />
         </motion.div>
       </div>
     </div>

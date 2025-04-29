@@ -14,6 +14,7 @@ import Code from "./Code.png?react";
 import APP from "./APP.jpg?react";
 import SP from "./SP.png?react";
 import VK from "./VK.jfif?react";
+import BGLessSoham from "./hewnje.png?react";
 
 export {
   VK,
@@ -32,5 +33,6 @@ export {
   Design,
   Marketing,
   Code,
+  BGLessSoham
 };
 
