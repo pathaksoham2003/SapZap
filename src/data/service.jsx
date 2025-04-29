@@ -1,4 +1,4 @@
-import {AI, MoneySutra, NFT, Somazon} from "../images";
+import {AI, MoneySutra, NFT, Somazon , SketchSpace, EcomMicroservice} from "../images";
 import JavaResume from "./resume/Java.jpg?react";
 
 export const Companies = [
@@ -55,9 +55,28 @@ export const Companies = [
   },
 ];
 
-export const WEBDEV = [
+export const TAB_ONE = [
   {
-    title: "Somazon: Ecommerce full stack",
+    title: "SketchSpace 🖌️: A Collaborative Drawing Platform",
+    hero: SketchSpace,
+    url: "https://major-project-client-wheat.vercel.app/",
+    description:
+      "A real time drawing platform with keycloak and socket based real time drawing and chatting",
+    tech: [
+      "React",
+      "TypeScript",
+      "Reduxjs Toolkit",
+      "Redux Persist",
+      "Axios",
+      "Node",
+      "MongoDB",
+      "Mongoose",
+      "Keycloak",
+      "Nodemailer",
+    ],
+  },
+  {
+    title: "Somazon 🛒: Ecommerce full stack",
     hero: Somazon,
     url: "https://major-project-client-wheat.vercel.app/",
     description:
@@ -72,6 +91,64 @@ export const WEBDEV = [
       "Sequelize",
       "Stripe",
       "Nodemailer",
+    ],
+  },
+  {
+    title: "NFT Marketplace: Transaction for NFTs",
+    hero: NFT,
+    url: "https://nft-market-place-omega.vercel.app/",
+    description:
+      "An ecommerce site with the complete filter functionality and payment gateway implementation",
+    tech: [
+      "React",
+      "Reduxjs Toolkit",
+      "Axios",
+      "Node",
+      "MySQL",
+      "Sequelize",
+      "Stripe",
+      "Nodemailer",
+    ],
+  },
+  {
+    title: "MoneySutra: A financial services platform",
+    hero: MoneySutra,
+    url: "https://moneysutra.vercel.app/",
+    description:
+      "A single page side for contacting a financial advisor for mutual fund investments",
+    tech: [
+      "React",
+      "Reduxjs Toolkit",
+      "Axios",
+      "Node",
+      "MySQL",
+      "Sequelize",
+      "Stripe",
+      "Nodemailer",
+    ],
+  },
+];
+
+export const TAB_TWO = [
+  {
+    title: "ShopPick: Ecommerce full stack",
+    hero: EcomMicroservice,
+    url: "https://major-project-client-wheat.vercel.app/",
+    liveLink:"",
+    githubRepo:"",
+    youtubeDemo:"",
+    description:
+      "An ecommerce site with the complete filter functionality and payment gateway implementation",
+    tech: [
+      "Angular",
+      "SpringBoot 3",
+      "Grafana",
+      "Prometheus",
+      "Resilience4J",
+      "Keycloak",
+      "Docker",
+      "Kubernetes",
+      "Kafka",
     ],
   },
   {
@@ -110,62 +187,7 @@ export const WEBDEV = [
   },
 ];
 
-export const MOBILE = [
-  {
-    title: "Somazon MOBILE: Ecommerce full stack",
-    hero: Somazon,
-    url: "https://major-project-client-wheat.vercel.app/",
-    description:
-      "An ecommerce site with the complete filter functionality and payment gateway implementation",
-    tech: [
-      "React",
-      "Reduxjs Toolkit",
-      "Redux Persist",
-      "Axios",
-      "Node",
-      "MySQL",
-      "Sequelize",
-      "Stripe",
-      "Nodemailer",
-    ],
-  },
-  {
-    title: "NFT Marketplace: Transaction for NFTs",
-    hero: NFT,
-    url: "https://nft-market-place-omega.vercel.app/",
-    description:
-      "An ecommerce site with the complete filter functionality and payment gateway implementation",
-    tech: [
-      "React",
-      "Reduxjs Toolkit",
-      "Axios",
-      "Node",
-      "MySQL",
-      "Sequelize",
-      "Stripe",
-      "Nodemailer",
-    ],
-  },
-  {
-    title: "Somazon: Ecommerce full stack ",
-    hero: MoneySutra,
-    url: "https://moneysutra.vercel.app/",
-    description:
-      "An ecommerce site with the complete filter functionality and payment gateway implementation",
-    tech: [
-      "React",
-      "Reduxjs Toolkit",
-      "Axios",
-      "Node",
-      "MySQL",
-      "Sequelize",
-      "Stripe",
-      "Nodemailer",
-    ],
-  },
-];
-
-export const AI_ML = [
+export const TAB_THREE = [
   {
     title: "AI_ML",
     hero: Somazon,
@@ -220,7 +242,7 @@ export const AI_ML = [
   },
 ];
 
-export const ProjectData = [WEBDEV, MOBILE, AI_ML];
+export const ProjectData = [TAB_ONE, TAB_TWO, TAB_THREE];
 
 export const RESUME = [
   {

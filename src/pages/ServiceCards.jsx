@@ -20,7 +20,7 @@ const GlowingCard = ({base, spread, projectInfo}) => {
   );
 };
 
-const ServiceCards = () => {
+const ServiceCards = ({tab}) => {
   useEffect(() => {
     const syncPointer = ({x, y}) => {
       document.documentElement.style.setProperty("--x", x.toFixed(2));
@@ -40,9 +40,9 @@ const ServiceCards = () => {
   }, []);
 
   return (
-    <div className="w-full flex justify-center items-center pt-10">
-      <div className="max-w-[1240px] px-10 grid md:grid-cols-2 grid-cols-1 justify-center gap-8 bg-background py-10">
-        {ProjectData[0].map((item) => (
+    <div className="w-full flex justify-center items-center">
+      <div className="max-w-[1240px] px-10 grid md:grid-cols-2 grid-cols-1 justify-center gap-8 bg-background py-5">
+        {ProjectData[tab].map((item) => (
           <GlowingCard
             key={item.id}
             projectInfo={item}

@@ -9,7 +9,7 @@ const Resume = () => {
         <motion.h2 className="text-heading">
           Get my different profile resume here!
         </motion.h2>
-        <motion.div className="w-full flex flex-wrap">
+        <motion.div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-4">
           {RESUME.map((item, index) => (
             <ResumeCard key={index} resume={item} />
           ))}
