@@ -75,7 +75,7 @@ const Hero = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, delay: 0.5 }}
           viewport={{ once: true }}
-          className="invisible h-0 md:visible  flex w-full lg:w-1/2 justify-center lg:justify-end mt-10 lg:mt-0"
+          className="invisible md:visible  flex w-full lg:w-1/2 justify-center lg:justify-end mt-10 lg:mt-0"
         >
           <img src={BGLessSoham} className="w-full max-w-[400px] lg:max-w-[500px] h-auto" />
         </motion.div>
