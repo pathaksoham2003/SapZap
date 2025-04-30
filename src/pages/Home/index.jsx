@@ -19,7 +19,7 @@ const Home = () => {
       <Counting />
       <Projects />
       <Connect />
-      <Temp/>
+      {/* <Temp/> */}
       <div className="h-10">
 
       </div>

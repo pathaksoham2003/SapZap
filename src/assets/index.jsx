@@ -15,6 +15,7 @@ import APP from "./APP.jpg?react";
 import SP from "./SP.png?react";
 import VK from "./VK.jfif?react";
 import BGLessSoham from "./hewnje.png?react";
+import JitterVideo from "./jitter.mp4";
 
 export {
   VK,
@@ -33,6 +34,7 @@ export {
   Design,
   Marketing,
   Code,
-  BGLessSoham
+  BGLessSoham,
+  JitterVideo
 };
 

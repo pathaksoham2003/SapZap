@@ -1,6 +1,7 @@
-import { useRef, useState } from "react";
-import { HeroImg } from "../../../assets";
+import {useRef, useState} from "react";
+import {HeroImg, JitterVideo} from "../../../assets";
 import emailjs from "@emailjs/browser";
+import SectionHeader from "../../../components/Headers/SectionHeader";
 
 const Connect = () => {
   const form = useRef();
@@ -15,12 +16,12 @@ const Connect = () => {
       errors.name = "Name is required";
       isValid = false;
     }
-    
+
     if (!formElements.surname.value.trim()) {
       errors.surname = "Surname is required";
       isValid = false;
     }
-    
+
     if (!formElements.email.value.trim()) {
       errors.email = "Email is required";
       isValid = false;
@@ -28,7 +29,7 @@ const Connect = () => {
       errors.email = "Email address is invalid";
       isValid = false;
     }
-    
+
     if (!formElements.contact.value.trim()) {
       errors.contact = "Contact number is required";
       isValid = false;
@@ -36,27 +37,32 @@ const Connect = () => {
       errors.contact = "Contact number must be 10 digits";
       isValid = false;
     }
-    
+
     if (!formElements.message.value.trim()) {
       errors.message = "Message is required";
       isValid = false;
     }
-    
+
     setErrors(errors);
     return isValid;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     if (!validateForm()) {
       return;
     }
-    
+
     emailjs
-      .sendForm(import.meta.env.VITE_EMJS_S_ID, import.meta.env.VITE_EMJS_T_ID, form.current, {
-        publicKey: import.meta.env.VITE_EMJS_PK,
-      })
+      .sendForm(
+        import.meta.env.VITE_EMJS_S_ID,
+        import.meta.env.VITE_EMJS_T_ID,
+        form.current,
+        {
+          publicKey: import.meta.env.VITE_EMJS_PK,
+        }
+      )
       .then(
         (result) => {
           console.log(result);
@@ -72,14 +78,13 @@ const Connect = () => {
 
   return (
     <div className="w-full flex justify-center ">
-      <div className="w-full max-w-[1240px] flex ">
-        <div className="flex flex-col md:flex-row">
-          <div className="px-4 md:px-16 mt-16">
-            <h2 className="text-6xl font-thin text-heading">Let’s <span className="font-semibold bg-gradient-to-tr from-cyan-400 to-white bg-clip-text text-transparent">Connect</span></h2>
-            <p className="text-xl ml-1 mt-3 text-subheading">
-              Let's align our constellations! Reach out and let the magic of
-              collaboration illuminate our skies.
-            </p>
+      <div className="w-full max-w-[1240px] ">
+        <SectionHeader title="Let's Connect" subtitle="Imagine-Execute-Evolve"/>
+        <div className="flex flex-col py-10 md:flex-row">
+          <div className="md:px-10 ">
+            <div>
+              <h2 className="text-heading">Drop your information below and we would get back to you</h2>
+            </div>
             <form
               ref={form}
               onSubmit={handleSubmit}
@@ -88,64 +93,98 @@ const Connect = () => {
               <div className="w-full flex justify-between">
                 <div className="relative w-full mr-2 my-3">
                   <input
-                    className={`w-full p-2 border border-gray-500 text-xl rounded-xl ${errors.name ? 'border-red-500' : ''}`}
+                    className={`w-full bg-background p-2 border border-gray-500 text-xl rounded-xl ${
+                      errors.name ? "border-red-500" : ""
+                    }`}
                     placeholder="Name"
                     name="name"
                     aria-describedby="name-error"
                   />
-                  {errors.name && <p id="name-error" className="text-red-500 text-sm">{errors.name}</p>}
+                  {errors.name && (
+                    <p id="name-error" className="text-red-500 text-sm">
+                      {errors.name}
+                    </p>
+                  )}
                 </div>
                 <div className="relative w-full ml-2 my-3">
                   <input
-                    className={`w-full p-2 border border-gray-500 text-xl rounded-xl ${errors.surname ? 'border-red-500' : ''}`}
+                    className={`w-full bg-background p-2 border border-gray-500 text-xl rounded-xl ${
+                      errors.surname ? "border-red-500" : ""
+                    }`}
                     placeholder="Surname"
                     name="surname"
                     aria-describedby="surname-error"
                   />
-                  {errors.surname && <p id="surname-error" className="text-red-500 text-sm">{errors.surname}</p>}
+                  {errors.surname && (
+                    <p id="surname-error" className="text-red-500 text-sm">
+                      {errors.surname}
+                    </p>
+                  )}
                 </div>
               </div>
               <div className="relative my-3">
                 <input
                   type="email"
-                  className={`p-2 border border-gray-500 text-xl rounded-xl w-full ${errors.email ? 'border-red-500' : ''}`}
+                  className={`p-2 bg-background border border-gray-500 text-xl rounded-xl w-full ${
+                    errors.email ? "border-red-500" : ""
+                  }`}
                   placeholder="Email Address"
                   name="email"
                   aria-describedby="email-error"
                 />
-                {errors.email && <p id="email-error" className="text-red-500 text-sm">{errors.email}</p>}
+                {errors.email && (
+                  <p id="email-error" className="text-red-500 text-sm">
+                    {errors.email}
+                  </p>
+                )}
               </div>
               <div className="relative my-3">
                 <input
                   type="text"
-                  className={`p-2 border border-gray-500 text-xl rounded-xl w-full ${errors.contact ? 'border-red-500' : ''}`}
+                  className={`p-2 bg-background border border-gray-500 text-xl rounded-xl w-full ${
+                    errors.contact ? "border-red-500" : ""
+                  }`}
                   placeholder="Contact No."
                   name="contact"
                   aria-describedby="contact-error"
                 />
-                {errors.contact && <p id="contact-error" className="text-red-500 text-sm">{errors.contact}</p>}
+                {errors.contact && (
+                  <p id="contact-error" className="text-red-500 text-sm">
+                    {errors.contact}
+                  </p>
+                )}
               </div>
               <div className="relative my-3">
                 <textarea
                   id="message"
                   rows="4"
-                  className={`block p-2.5 w-full text-xl text-gray-900 rounded-lg border border-gray-500 ${errors.message ? 'border-red-500' : ''}`}
+                  className={`block bg-background p-2.5 w-full text-xl text-gray-900 rounded-lg border border-gray-500 ${
+                    errors.message ? "border-red-500" : ""
+                  }`}
                   placeholder="Write your thoughts here...."
                   name="message"
                   aria-describedby="message-error"
                 ></textarea>
-                {errors.message && <p id="message-error" className="text-red-500 text-sm">{errors.message}</p>}
+                {errors.message && (
+                  <p id="message-error" className="text-red-500 text-sm">
+                    {errors.message}
+                  </p>
+                )}
               </div>
               <input
                 type="submit"
-                className="bg-gradient-to-tr from-cyan-300 to-black shadow-md rounded-xl text-center py-3 text-xl text-white font-bold"
+                className="bg-gradient-to-tr from-primary to-secondary shadow-md rounded-xl text-center py-3 text-xl text-white font-bold"
                 value="Send"
               />
             </form>
           </div>
-          <div className="mx-2 md:mr-20 py-10">
-            <div className="overflow-hidden h-[600px] rounded-3xl">
-              <img src={HeroImg} alt="Hero" />
+          <div className="mx-2 md:mr-20">
+            <div className=""></div>
+            <div className="overflow-hidden rounded-3xl">
+              <video className="w-full h-full" autoPlay muted loop playsInline>
+                <source src={JitterVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </div>
         </div>

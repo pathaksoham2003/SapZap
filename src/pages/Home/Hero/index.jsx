@@ -38,7 +38,7 @@ const Hero = () => {
             Hi, I
             <motion.span className="text-5xl sm:text-6xl text-primary">' </motion.span>
             m Soham
-            <motion.div className="h-4 w-4 sm:h-5 sm:w-5 rounded-full bg-primary"></motion.div>
+            <motion.div className="h-4 w-4 sm:h-5 sm:w-5 rounded-full bg-gradient-to-tr from-primary to-secondary"></motion.div>
           </motion.h2>
           <motion.h2
             initial={{ opacity: 0, y: 10 }}

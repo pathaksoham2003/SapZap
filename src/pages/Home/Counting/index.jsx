@@ -3,7 +3,7 @@ import Counter from "../../../components/Counter";
 
 const Counting = () => {
   return (
-    <div className="w-full flex justify-center mt-20 bg-subheading/20 py-10">
+    <div className="w-full flex justify-center mt-20 bg-gradient-to-t from-primary py-10">
       <div className="w-full flex justify-center max-w-[1204px]">
         <div className="w-full flex flex-col md:flex-row justify-between max-w-[1000px]">
           <div className="text-2xl text-heading text-center font-semibold">

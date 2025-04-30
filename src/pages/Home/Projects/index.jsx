@@ -3,6 +3,7 @@ import Project from "./Project";
 import { Companies, ProjectData } from "../../../data/service.jsx";
 import { motion } from "framer-motion";
 import ServiceCards from "../../ServiceCards.jsx";
+import SectionHeader from "../../../components/Headers/SectionHeader.jsx";
 
 const Projects = () => {
   const [tab, setTab] = useState(0);
@@ -10,18 +11,7 @@ const Projects = () => {
   return (
     <div className="w-full flex justify-center items-center pt-20">
       <div className="w-full flex flex-col max-w-[1240px]">
-        <div className="w-full my-2 py-4 flex justify-center items-center">
-          <h2 className="flex items-end text-heading pr-4 w-auto text-6xl font-semibold">
-            Projects
-            <div className="h-2 ml-2 w-2 mb-1 rounded-full bg-primary"></div>
-          </h2>
-
-          <div className="w-full mt-5 pl-5 border-t-2 hidden sm:block">
-            <h2 className="text-sm w-[260px] text-subheading/80 font-semibold ml-auto italic tracking-widest">
-              Actions speak louder than words.
-            </h2>
-          </div>
-        </div>
+        <SectionHeader title="Projects" subtitle="Actions speak louder than words"/>
         <div className="w-full flex justify-between">
           <div className="w-full flex justify-center my-4">
             <motion.div
@@ -44,7 +34,7 @@ const Projects = () => {
                   whileTap={{ scale: 0.95 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.2 }}
-                  className={`${index == tab ? "bg-gradient-to-tr font-semibold from-blue-500 to-purple-600 text-white hover:bg-subheading transition-colors duration-500 " : "text-heading"}  rounded-md px-6 md:px-8 py-2 cursor-pointer`}
+                  className={`${index == tab ? "bg-gradient-to-tr font-semibold from-primary shadow-md shadow-gray-500 to-secondary text-black hover:bg-subheading transition-colors duration-500 " : "text-heading"}  rounded-md px-6 md:px-8 py-2 cursor-pointer`}
                 >
                   {label}
                 </motion.h2>

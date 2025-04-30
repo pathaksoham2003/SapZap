@@ -3,7 +3,7 @@ import { amazonWebServicesOriginalWordmark, bitbucketOriginal, bootstrapPlain, c
 
 const InfiniteTextStrip = () => {
   return (
-    <div className="overflow-hidden whitespace-nowrap  bg-primary/10 py-5 my-10">
+    <div className="overflow-hidden whitespace-nowrap bg-gradient-to-t from-primary/50 to-transparent py-5 my-10">
       {/* Outer container to control overflow and scrolling */}
       <div className="flex w-full animate-marquee">
         <img src={bitbucketOriginal} alt="Bitbucket" className="h-12 w-12 mx-10" />

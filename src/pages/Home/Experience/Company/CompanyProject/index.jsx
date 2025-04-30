@@ -29,19 +29,20 @@ const CompanyProject = ({item}) => {
             </motion.li>
           ))}
         </ul>
-        <div className="flex flex-wrap border-l-2 md:pl-4 border-black items-start w-full md:max-w-[150px]">
+        <div className="flex flex-wrap  md:pl-4 items-start w-full md:max-w-[150px]">
           <div className="flex flex-wrap items-start w-full md:max-w-[150px]">
             {item.technologies.map((item, index) => (
-              <motion.h2
-                key={index}
-                initial={{opacity: 0, y: 10}}
-                whileInView={{opacity: 1, y: 0}}
-                transition={{duration: 0.4 * index}}
-                viewport={{once: true}}
-                className="bg-primary/70 p-1 text-black rounded-lg font-semibold m-1"
-              >
-                {item}
-              </motion.h2>
+              <motion.div key={index} className="bg-gradient-to-r from-primary via-secondary m-1 pr-10 rounded-l-lg">
+                <motion.h2
+                  initial={{opacity: 0, y: 10}}
+                  whileInView={{opacity: 1, y: 0}}
+                  transition={{duration: 0.4 * index}}
+                  viewport={{once: true}}
+                  className="p-1 pl-2 text-black font-semibold whitespace-nowrap"
+                >
+                  {item}
+                </motion.h2>
+              </motion.div>
             ))}
           </div>
         </div>

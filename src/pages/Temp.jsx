@@ -38,7 +38,7 @@ export default function Temp() {
           viewport={{once: true}}
         >
           We Transform Your Ideas For <br />
-          <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
             Websites And Apps
           </span>{" "}
           Into Reality

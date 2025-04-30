@@ -1,26 +1,70 @@
 import React from "react";
-import { SapZap } from "../../images";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+} from "react-icons/fa";
+import {HeroSoham} from "../../images";
+import {BGLessSoham} from "../../assets";
 
 const Footer = () => {
   return (
-    <div className="w-full flex justify-center bg-accent py-6">
-      <div className="w-full flex max-w-[1204px]">
-        <div className="w-52 h-52 rounded-full overflow-hidden">
-          <img src={SapZap} />
+    <footer className="w-full text-heading bg-background px-6 py-10">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start space-y-10 md:space-y-0">
+        <div className="flex text-black bg-gradient-to-r pr-28 from-secondary to-transparent from-30% rounded-l-full items-center space-x-4">
+          <img
+            src={BGLessSoham} 
+            alt="Technolkar Logo"
+            className="h-32 w-32 object-contain"
+          />
+          <div className="">
+            <h1 className="text-3xl font-semibold">Soham Pathak</h1>
+            <p className="mt-2">+91 7887557175</p>
+            <p>pathaksoham2003@gmail.com</p>
+          </div>
         </div>
-        <div className="flex flex-col ml-8">
-          <h2 className="text-heading text-4xl">Soham Pathak</h2>
-          <p className="w-[300px] ">
-            {" "}
-            Professional Web-Developer and AI Engineer
-          </p>
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=pathaksoham2003@gmail.com">Send email</a>
-          <a href="https://www.linkedin.com/in/soham-pathak-86726b22a/">Linkedin</a>
-          <a href="https://github.com/pathaksoham2003">Github</a>
+        <div>
+          <h2 className="text-lg font-semibold mb-2">Socials</h2>
+          <div className="flex flex-col space-y-2">
+            <a
+              href="#"
+              className="flex items-center space-x-2 hover:text-blue-400"
+            >
+              <FaFacebookF /> <span>Facebook</span>
+            </a>
+            <a
+              href="#"
+              className="flex items-center space-x-2 hover:text-blue-400"
+            >
+              <FaTwitter /> <span>Twitter</span>
+            </a>
+            <a
+              href="#"
+              className="flex items-center space-x-2 hover:text-pink-400"
+            >
+              <FaInstagram /> <span>Instagram</span>
+            </a>
+            <a
+              href="#"
+              className="flex items-center space-x-2 hover:text-blue-300"
+            >
+              <FaLinkedinIn /> <span>LinkedIn</span>
+            </a>
+          </div>
         </div>
-        <div></div>
       </div>
-    </div>
+
+      <div className="border-t border-gray-700 mt-10 pt-4 flex flex-col md:flex-row justify-between items-center text-sm">
+        <p>
+          Developed by{" "}
+          <a href="#" className="text-purple-400 hover:underline">
+            Soham Pathak
+          </a>
+        </p>
+        <p>© Copyright 2024, All Rights Reserved by Soham Pathak</p>
+      </div>
+    </footer>
   );
 };
 
