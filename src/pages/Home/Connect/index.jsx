@@ -78,12 +78,12 @@ const Connect = () => {
 
   return (
     <div className="w-full flex justify-center ">
-      <div className="w-full max-w-[1240px] ">
+      <div className="w-full max-w-[1240px] pt-10">
         <SectionHeader title="Let's Connect" subtitle="Imagine-Execute-Evolve"/>
         <div className="flex flex-col py-10 md:flex-row">
           <div className="md:px-10 ">
             <div>
-              <h2 className="text-heading">Drop your information below and we would get back to you</h2>
+              <h2 className="text-heading text-2xl">Drop your information below and we would get back to you</h2>
             </div>
             <form
               ref={form}
@@ -178,8 +178,7 @@ const Connect = () => {
               />
             </form>
           </div>
-          <div className="mx-2 md:mr-20">
-            <div className=""></div>
+          <div className="mx-2">
             <div className="overflow-hidden rounded-3xl">
               <video className="w-full h-full" autoPlay muted loop playsInline>
                 <source src={JitterVideo} type="video/mp4" />

@@ -14,11 +14,11 @@ const Social = () => {
   return (
     <div className="bg-gradient-to-r from-primary rounded-l-xl pr-12">
       <div className="flex justify-evenly mt-3 min-w-[200px] p-2.5">
-        <FaWhatsapp
+        {/* <FaWhatsapp
           size={30}
           className="text-heading ml-4 cursor-pointer"
           onClick={() => handleSocialOpen("https://wa.me/917887557175")}
-        />
+        /> */}
         <FaGoogle
           size={30}
           className="text-heading ml-4 cursor-pointer"

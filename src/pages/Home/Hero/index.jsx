@@ -7,7 +7,6 @@ import { BGLessSoham } from "../../../assets";
 const Hero = () => {
   return (
     <div className="relative w-full overflow-hidden flex justify-center items-center pt-[80px]">
-      {/* Animated color gradients */}
       <motion.div
         initial={{ opacity: 0, scale: 0, rotate: 45 }}
         animate={{ opacity: 0.7, scale: 1, rotate: 45 }}
