@@ -50,7 +50,7 @@ const Footer = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
         >
-          <div className="absolute left-16 top-0 h-full w-full bg-gradient-to-l transform skew-x-[-40deg] from-secondary via-secondary to-transparent origin-left z-0"></div>
+          <div className="absolute left-16 top-0 h-full w-full bg-gradient-to-l transform skew-x-[-40deg] from-primary via-primary to-transparent origin-left z-0"></div>
 
           <div className="relative z-10 flex items-center space-x-4 pl-16">
             {/* <div

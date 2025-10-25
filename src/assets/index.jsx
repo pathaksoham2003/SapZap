@@ -13,6 +13,7 @@ import Marketing from "./Marketing.png?react";
 import Code from "./Code.png?react";
 import APP from "./APP.jpg?react";
 import SP from "./SP.png?react";
+import SAP from "./SAP.jpg?react";
 import VK from "./VK.jfif?react";
 import BGLessSoham from "./hewnje.png?react";
 import JitterVideo from "./jitter.mp4";
@@ -20,6 +21,7 @@ import JitterVideo from "./jitter.mp4";
 export {
   VK,
   SP,
+  SAP,
   APP,
   CAPathakPP,
   LogoLight,
